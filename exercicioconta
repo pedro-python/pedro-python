@@ -1,0 +1,31 @@
+class Conta:
+    def __init__(self , conta , nome , saldo , percentual_imposto):
+        self.conta = conta
+        self.nome = nome
+        self.saldo = saldo
+        self.percentualimposto = percentual_imposto
+        
+class ContaCorrente(Conta):
+    def __init__(self , conta , nome, saldo,):
+        super().__init__(conta , nome , saldo)
+        self.conta 
+        self.nome
+        self.saldo
+        
+class ContaPoupanca(Conta):
+    def __init__(self , conta , nome , saldo):
+        super().__init__(conta , nome , saldo)
+        self.conta
+        self.nome
+        self.saldo
+        
+class ContaImposto(Conta):
+    def __init__(self , conta ,nome , saldo , percentualimposto):
+        super().__init__(conta, nome ,saldo , percentualimposto)
+    def calculaimposto(self):
+        imposto = self.saldo * self.percentualimposto
+        print(f'O calculo do imposto é: {imposto:.2f}')
+        
+
+conta_imposto = ContaImposto(123, 'Pedro', 1000, 0.10)
+conta_imposto.calculaimposto() 
