@@ -27,5 +27,5 @@ class ContaImposto(Conta):
         print(f'O calculo do imposto é: {imposto:.2f}')
         
 
-conta_imposto = ContaImposto(123, 'Pedro', 1000, 0.10)
+conta_imposto = ContaImposto(142606, 'Pedro', 1000, 0.10)
 conta_imposto.calculaimposto() 
