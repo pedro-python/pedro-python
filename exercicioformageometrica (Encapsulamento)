@@ -219,3 +219,25 @@ print('perimetro: ',r.perimetro)
 
 class Triangulo(FormaGeometrica):
     def __init__(self, base, altura, lado_a=4, lado_b=6, lado_c=9, angulo_ab=20, angulo_ac=50, angulo_bc=70)
+    super().__init__(lado_a=4, lado_b=6, lado_c=9, angulo_ab=20, angulo_ac=50, angulo_bc=70)
+    self.__altura = altura 
+    
+     @property
+    def area(self):
+        return self.altura * self.base / 2
+
+    @property
+    def altura(self):
+        return self.__altura 
+    
+    @property
+    def base(self):
+        return super().lado
+    
+    @property
+    def perimetro(self):
+        return (self.base * 2 ) + (self.altura * 2 ) / 2 
+    
+t = Triangulo(10,8)
+print('area: ',t.area)
+print('perimetro:',t.perimetro)
