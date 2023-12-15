@@ -1,23 +1,39 @@
-class Carro:
+classe Carro:
 
-    def _init_(self, cor , marca , modelo):
+def __init__(self):
+    self.cor = 'Azul'
+    self.marca = 'Volvo'
+    self.modelo = 'xc40'
+    self.ligado = False
+    self.andando = False
 
-        self.cor = cor
-        self.marca = marca
-        self.modelo = modelo 
-        self.ligado = False
-        self.andando = False
+    print(self.status())     
 
-        print(self.status())
-        
-    def motor_ligado(self):
-        if self.ligado = True
-            print(motor, 'Ligado')
-        else:
-            def motor_desligado(self):
-              if self.desligado = False
-                print(motor, 'Desligado')
+def ligar_motor(self):
+    print('Ligue o carro')
+    self.ligado = True
+    self.andando = False
+    print(self.status())
 
+def andar(self):
+    pass
+
+def parar(self):
+    pass
+
+def desligar_motor(self):
+    pass
+
+def status(self):
+    if self.ligado:
+        print('O Carro está Ligado')
+    else:
+        print('O Carro está Desligado')
+    if self.andando:
+        print('O Carro está Andando')
+    else:
+        print('O Carro está Parado')
+carrinho = Carro() imprimir(carrinho.marca) imprimir(carrinho.modelo) imprimir(carrinho.cor) carrinho.ligar_motor()
 
 
 
