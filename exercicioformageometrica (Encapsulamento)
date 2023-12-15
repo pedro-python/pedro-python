@@ -114,7 +114,7 @@ print(q.perimetro)
 
 
 # class Triangulo():
-#     def __init__(self, base, altura, lado_a=2, lado_b=3, lado_c=5, angulo_ab=90, angulo_ac=30, angulo_bc=60):
+#     def __init__(self, base, altura, lado_a=4, lado_b=6, lado_c=9, angulo_ab=20, angulo_ac=50, angulo_bc=70):
     
 #         self.__base = base 
 #         self.__altura = altura
@@ -216,3 +216,6 @@ class Retangulo(FormaGeometrica):
 r = Retangulo(4,6)
 print('area: ',r.area)
 print('perimetro: ',r.perimetro)
+
+class Triangulo(FormaGeometrica):
+    def __init__(self, base, altura, lado_a=4, lado_b=6, lado_c=9, angulo_ab=20, angulo_ac=50, angulo_bc=70)
