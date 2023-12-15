@@ -1,0 +1,95 @@
+# class Quadrado:
+
+#     @property
+    
+#     def __init__(self, lado, area , perimetro):
+#             self.__lado = lado
+        
+#             @property
+#             def area(self):
+#                 return self.__lado ** 2
+    
+#             @property
+#             def perimetro(self):
+#                 return self.__lado * 4
+        
+#             q = Quadrado(4)
+#             print(q.area)
+        
+# class Retangulo:
+    
+#     @property
+#     def __init__(self,base,altura,area,perimetro):
+#         self._altura = altura
+#         self._base = base 
+        
+#         @property
+#         def area(self):
+#             return self._altura ** self._base
+    
+#         @property
+#         def perimetro(Self):
+#             return self._area == self._base * self._altura
+
+# class Circulo:
+#     @property
+#     def _init_(self,raio,diamentro,area,perimetro):
+#         self._raio  
+        
+    
+        
+    
+        
+class FormaGeometrica():
+        
+    def __init__(self,lado):
+        self.__lado = lado 
+            
+    @property
+    def area(self):
+        pass
+            
+    @property
+    def perimetro(self):
+        pass
+            
+    @property
+    def lado(self):
+        return self.__lado
+            
+# class Quadrado(FormaGeometrica):
+    
+#     def __init__(self,lado):
+#         super().__init__(lado)
+        
+#     @property
+#     def area(self):
+#         return self.lado ** 2
+        
+# q = Quadrado(4)
+# print(q.area)
+                
+class Retangulo(FormaGeometrica):
+    def __init__(self, altura, base):
+        super().__init__(base)
+        self.__altura = altura   
+    
+    @property
+    def area(self):
+        return self.altura * self.base
+
+    @property
+    def altura(self):
+        return self.__altura 
+    
+    @property
+    def base(self):
+        return super().lado
+    
+    @property
+    def perimetro(self):
+        return (self.base * 2 ) + (self.altura * 2 )
+    
+r = Retangulo(4,6)
+print('area: ',r.area)
+print('perimetro: ',r.perimetro)
