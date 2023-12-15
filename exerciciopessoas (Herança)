@@ -29,7 +29,7 @@ class Pai(Pessoa):
     def __init__(self, nome, idade, endereço, cpf, sexo):
         super().__init__(nome, idade, endereço, cpf, sexo)
 
-p = Pai('Pedro', 24, 'rua', '59489', 'masculino')
+p = Pai('Pedro', 40 , 'Rua 52 Qd.3 lt.1 Cidade Goiânia', '505.894.705-26', 'masculino')
 print(p.nome)
 
 class Mae(Pessoa): 
@@ -37,7 +37,7 @@ class Mae(Pessoa):
     def __init__(self, nome, idade, endereço, cpf, sexo):
         super().__init__(nome, idade, endereço, cpf, sexo)
 
-m = Mae('Lais', 25, 'rua', '59489', 'feminino')
+m = Mae('Lais', 42 , 'Rua 52 Qd.3 lt.1 Cidade Goiânia', '594.270.654-27', 'feminino')
 print(m.nome)
         
 class Filho(Pessoa): 
@@ -45,5 +45,5 @@ class Filho(Pessoa):
     def __init__(self, nome, idade, endereço, cpf, sexo):
         super().__init__(nome, idade, endereço, cpf, sexo)
 
-f = Filho('Aurora', 18, 'rua', '59489', 'feminino')
+f = Filho('Aurora', 18, 'Rua 52 Qd.3 lt.1 Cidade Goiânia. ', '103.894.256-05', 'feminino')
 print(f.nome)
